@@ -37,7 +37,7 @@
       <!-- Header -->
       <header class="cv-header">
         <h1>김동균</h1>
-        <p class="title">소프트웨어 개발자</p>
+        <p class="title">백엔드 개발자</p>
         <div
           class="contact"
           style="
@@ -61,21 +61,22 @@
       <section class="cv-section cv-section-about">
         <h2>소개</h2>
         <p class="about-text">
-          문제를 정의하고 결과를 수치로 증명하는 개발을 지향하는 소프트웨어
-          개발자입니다. 현재 Java · Spring Boot 기반 실서비스를 개발하며, NHN KCP 결제 연동(결제 · 취소 ·
-          환불), Spring AOP 기반 로깅 및 심사 이력 추적, 파일 입출력 기반 산출물
-          다운로드, 이메일 · SMS 알림 등 서비스 핵심 기능을 직접 설계하고
-          구현하고 있습니다.<br />성능과 안정성에 대한 고민을 실제 결과로
-          이어왔습니다. 무신사 벤치마킹 프로젝트에서는 좋아요 기능의 Lost Update
-          문제를 원자적 쿼리로 해결해 데이터 정합성을 지키면서 응답 속도를
-          <strong>46% 개선</strong>했고, 주문 조회의 N+1 문제를 배치 쿼리로 풀어
-          <strong>DB 접근을 84% 절감</strong>했습니다. 복지팡이 RAG
-          에이전트에서는 LangGraph 기반 멀티 카테고리 상담 시스템과 다단계 폴백
-          검색을 설계하며 AI 서비스 개발까지 경험을 넓혔습니다.<br />단순히
-          동작하는 코드를 넘어 SOLID 원칙과 디자인 패턴, 정규화 기반의 데이터
-          모델링, 그리고 측정 가능한 성능 개선을 추구합니다. 화면 너머의 데이터
-          흐름과 시스템 전체를 조망하며 안정적인 서비스를 만드는 소프트웨어
-          엔지니어로 성장하고자 합니다.
+          현재 특허 · 지식재산 도메인의 공공 시스템을 Java · Spring Boot 기반으로
+          개발하며, NHN KCP 결제
+          연동, Spring AOP 기반 로깅 및 커스텀 어노테이션 개발로 자동 추적 시스템 구현, 파일
+          입출력 기반 산출물 다운로드 등 서비스 핵심 기능을 구현해 왔습니다.<br />프로젝트에서는 성능과 안정성 문제를
+          직접 정의하고 해결해 왔습니다. 무신사 벤치마킹 프로젝트에서는 좋아요
+          기능의 Lost Update 문제를 원자적 쿼리로 해결해 데이터 정합성을
+          지키면서 응답 속도를 <strong>46% 개선</strong>했고, 주문 조회의 N+1
+          문제를 배치 쿼리로 풀어 <strong>DB 접근을 84% 절감</strong>했으며,
+          60,000건 이상의 상품 데이터 환경에서 커서 기반 페이지네이션을
+          구현했습니다. 복지팡이 RAG 에이전트에서는 LangGraph 기반 멀티 카테고리
+          상담 시스템과 다단계 폴백 검색을 설계하며 AI 서비스 개발까지 경험을
+          넓혔습니다. 비엔시스템 인턴십에서는 Spring AOP 활동 추적과 3단계
+          RBAC, Soft Delete 기반 이력 관리 등 운영 환경의 요구사항을
+          구현했습니다.<br />이 과정에서 SOLID 원칙과 디자인 패턴을 적용한
+          유지보수 가능한 설계, 정규화 기반의 데이터 모델링, 측정 가능한 성능
+          개선을 꾸준히 고민하며 코드를 작성해 왔습니다.
         </p>
       </section>
 
@@ -102,6 +103,14 @@
               <span class="skill-tag">QueryDSL</span>
               <span class="skill-tag">FastAPI</span>
               <span class="skill-tag">OAuth2 / JWT</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <h3>Frontend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">JSP</span>
+              <span class="skill-tag">JavaScript</span>
             </div>
           </div>
           <div class="skill-row">
@@ -139,7 +148,7 @@
         <h2>경력</h2>
 
         <div class="timeline-item">
-          <h3>소프트웨어 개발자</h3>
+          <h3>백엔드 개발자</h3>
           <p class="company">(주)엘리먼트소프트웨어</p>
           <p class="period">2026년 3월 — 현재</p>
           <ul class="description">
@@ -167,12 +176,13 @@
               구현해 사용자 알림 채널 확보
             </li>
             <li class="parent-item">
-              RIPC 지역지식재산센터 — MyBatis · Eclipse · SVN 환경의 시스템
-              유지보수
+              RIPC 지역지식재산센터 — MyBatis · Eclipse · SVN 환경의 특허 ·
+              지식재산 행정 시스템 유지보수
             </li>
             <li>
-              <strong>Dooray 연동</strong> — 조직도 및 계정 동기화 작업을 구현해
-              협업 도구와 사내 시스템 간 데이터 정합성 유지
+              <strong>Dooray–RIPC 계정 연동 시스템 구축</strong> — Dooray 측 담당
+              매니저와 직접 소통하며 Dooray와 RIPC 간 조직도 · 계정 동기화 연동을
+              설계 · 구현해 두 시스템 간 계정 정보의 정합성 확보
             </li>
           </ul>
           <div class="project-tech">
@@ -188,7 +198,7 @@
         </div>
 
         <div class="timeline-item">
-          <h3>소프트웨어 개발 인턴</h3>
+          <h3>백엔드 개발 인턴</h3>
           <p class="company">비엔시스템 (B&amp;N System)</p>
           <p class="period">2025년 11월 — 2025년 12월</p>
           <ul class="description">
