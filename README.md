@@ -1,6 +1,8 @@
-# Soojin Jung Profile
+# 김동균 Profile
 
-🔗 link: https://www.sooya.dev/
+소프트웨어 개발자 김동균의 프로필 / 이력서 / 포트폴리오 정적 사이트입니다.
+
+🔗 link: _(배포 URL 추가 예정)_
 
 ---
 
@@ -36,15 +38,3 @@
 
 ⚠️ LinkedIn JD는 로그인 벽 때문에 URL 가져오기가 실패할 수 있습니다 — 그 경우 JD 본문을 복사해 붙여넣어 주세요.
 
----
-
-<table>
-  <tr>
-    <td align="center"><h4>v2.0</h4></td>
-    <td align="center"><h4>v1.0</h4></td>
-  </tr>
-  <tr>
-    <td><img src="./images/thumbnail_v2.png" alt="thumbnail v2" width="280px"></td>
-    <td><img src="./images/thumbnail.png" alt="thumbnail v1" width="280px"></td>
-  </tr>
-</table>

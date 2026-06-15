@@ -29,7 +29,7 @@ body {
   width: 128px;
   height: 128px;
   border-radius: 50%;
-  background-image: url("/images/pink_notebook.jpg");
+  background-image: url("../images/pink_notebook.jpg");
   background-position: center;
   background-size: cover;
   border: 2px solid var(--accent);

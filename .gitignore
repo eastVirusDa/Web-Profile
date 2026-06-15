@@ -1,1 +1,10 @@
 .DS_Store
+
+# IDE
+.idea/
+
+# 개인정보 / 임시 파일 (배포 저장소에 포함하지 않음)
+sample/
+image.png
+
+.claude
