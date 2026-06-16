@@ -61,22 +61,17 @@
       <section class="cv-section cv-section-about">
         <h2>소개</h2>
         <p class="about-text">
-          현재 특허 · 지식재산 도메인의 공공 시스템을 Java · Spring Boot 기반으로
-          개발하며, NHN KCP 결제
-          연동, Spring AOP 기반 로깅 및 커스텀 어노테이션 개발로 자동 추적 시스템 구현, 파일
-          입출력 기반 산출물 다운로드 등 서비스 핵심 기능을 구현해 왔습니다.<br />프로젝트에서는 성능과 안정성 문제를
-          직접 정의하고 해결해 왔습니다. 무신사 벤치마킹 프로젝트에서는 좋아요
-          기능의 Lost Update 문제를 원자적 쿼리로 해결해 데이터 정합성을
-          지키면서 응답 속도를 <strong>46% 개선</strong>했고, 주문 조회의 N+1
-          문제를 배치 쿼리로 풀어 <strong>DB 접근을 84% 절감</strong>했으며,
-          60,000건 이상의 상품 데이터 환경에서 커서 기반 페이지네이션을
-          구현했습니다. 복지팡이 RAG 에이전트에서는 LangGraph 기반 멀티 카테고리
-          상담 시스템과 다단계 폴백 검색을 설계하며 AI 서비스 개발까지 경험을
-          넓혔습니다. 비엔시스템 인턴십에서는 Spring AOP 활동 추적과 3단계
-          RBAC, Soft Delete 기반 이력 관리 등 운영 환경의 요구사항을
-          구현했습니다.<br />이 과정에서 SOLID 원칙과 디자인 패턴을 적용한
-          유지보수 가능한 설계, 정규화 기반의 데이터 모델링, 측정 가능한 성능
-          개선을 꾸준히 고민하며 코드를 작성해 왔습니다.
+          특허 · 지식재산 공공 시스템과 커머스 벤치마킹 프로젝트에서 Java ·
+          Spring Boot 기반 백엔드를 구축해 왔습니다. 단순 기능 구현을 넘어 성능과
+          안정성 문제를 직접 정의하고 수치로 개선하는 데 강점이 있습니다. 좋아요
+          동시성(Lost Update)을 원자적 쿼리로 해결해 응답 속도를
+          <strong>46% 개선</strong>하고, 주문 조회 N+1을 배치 쿼리로 풀어
+          <strong>DB 접근을 84% 절감</strong>했으며, 결제 · 환불 트랜잭션 정합성과
+          webhook 검증 · URL 암호화 같은 보안까지 함께 고민해 왔습니다.<br />최근에는
+          NHN KCP 결제 라이프사이클과 Spring AOP 기반 로그 통합 · 감사 로깅 같은
+          횡단 관심사, LangGraph · ChromaDB RAG 파이프라인으로 영역을 확장하고
+          있으며, AI를 활용한 문서 · 테스트 자동화로 개발 워크플로우를 꾸준히
+          개선하고 있습니다.
         </p>
       </section>
 
@@ -87,7 +82,7 @@
           <div class="skill-row">
             <h3>Language</h3>
             <div class="skill-tags">
-              <span class="skill-tag">Java 21</span>
+              <span class="skill-tag">Java 17 / 21</span>
               <span class="skill-tag">Python 3</span>
               <span class="skill-tag">SQL</span>
             </div>
@@ -101,7 +96,6 @@
               <span class="skill-tag">JPA</span>
               <span class="skill-tag">MyBatis</span>
               <span class="skill-tag">QueryDSL</span>
-              <span class="skill-tag">FastAPI</span>
               <span class="skill-tag">OAuth2 / JWT</span>
             </div>
           </div>
@@ -120,14 +114,13 @@
               <span class="skill-tag">LangGraph</span>
               <span class="skill-tag">LangSmith</span>
               <span class="skill-tag">RAG</span>
-              <span class="skill-tag">Upstage Solar LLM</span>
             </div>
           </div>
           <div class="skill-row">
             <h3>Database</h3>
             <div class="skill-tags">
               <span class="skill-tag">Oracle 19c</span>
-              <span class="skill-tag">MySQL 9.0</span>
+              <span class="skill-tag">MySQL</span>
               <span class="skill-tag">PostgreSQL</span>
               <span class="skill-tag">ChromaDB</span>
             </div>
@@ -154,27 +147,29 @@
           <p class="period">2026년 3월 — 현재</p>
           <ul class="description">
             <li class="parent-item">
-              KIPA PVPP 프로젝트 — Java 17 · Spring Boot · JPA · MySQL 기반 백엔드
-              개발로 결제 · 알림 · 로깅 등 핵심 기능을 담당
+              특허 · 지식재산 공공 시스템(KIPA PVPP)에서 신청 접수부터 심사 ·
+              수수료 · 확인서 발급까지 이어지는 행정 플로우를 Java 17 · Spring
+              Boot · JPA · MySQL 기반으로 구축
             </li>
             <li>
-              <strong>Spring AOP 기반 로깅 체계</strong> 구축 — 비즈니스 로직과
-              분리된 횡단 관심사로 관리자/사용자 웹 로그, 액션 로그, 심사 상태
-              변경 이력을 자동 추적하는 감사(audit) 로깅 구현
+              NHN KCP 결제 연동으로 신용카드 · 가상계좌 결제부터 취소 · 환불까지
+              결제 라이프사이클 전반을 구현하고, webhook IP/금액 검증과 가상계좌
+              만료 처리, 통지서 URL 암호화로 결제 보안 및 트랜잭션 정합성 확보
             </li>
             <li>
-              <strong>File I/O 기반 파일 다운로드</strong> 구현 — 엑셀 · PDF ·
-              ZIP 등 다양한 포맷의 산출물을 서버에서 생성·압축해 내보내는 기능
-              제공
+              Spring AOP 기반 6종 로그 통합 시스템을 구축해 웹 로그 · 액션 로그 ·
+              심사 상태 변경 이력을 비즈니스 로직과 분리해 자동 추적하고, 로그 회전
+              보관 스케줄러로 운영 환경 로그 관리 자동화
             </li>
             <li>
-              <strong>NHN KCP 결제 연동</strong> — 신용카드 · 가상계좌 결제부터
-              결제 취소 · 환불까지 결제 라이프사이클 전반의 플로우를 테스트 연동
-              환경에서 구현
+              신청서 PDF · ZIP 일괄 · 엑셀 산출물 다운로드를 구현하고, 선택 다운로드
+              N+1을 일괄 조회로 전환하고 ZIP 생성 OOM과 HTTP 타임아웃을 개선해 대량
+              다운로드 안정성 확보
             </li>
             <li>
-              <strong>NHN Cloud 알림 연동</strong> — 이메일 · SMS 발송 기능을
-              구현해 사용자 알림 채널 확보
+              심사 워크플로우 기능을 개발해 우수제품 ↔ 혁신시제품 서비스 전환, 재발행
+              신청(확인서 발급일 3년 이내 제한), 단계별 심사위원 변경, 담당자 배정 시
+              NHN Cloud 메일 · SMS 알림 발송 구현
             </li>
             <li class="parent-item">
               RIPC 지역지식재산센터 — MyBatis · Eclipse · SVN 환경의 특허 ·
@@ -233,6 +228,7 @@
             <span>Spring Boot</span>
             <span>JPA</span>
             <span>QueryDSL</span>
+            <span>React</span>
             <span>PostgreSQL</span>
             <span>AWS S3/RDS</span>
           </div>
@@ -277,6 +273,7 @@
             <span>JWT</span>
             <span>JPA</span>
             <span>PostgreSQL</span>
+            <span>React</span>
             <span>AWS (EC2)</span>
           </div>
         </div>
@@ -308,6 +305,10 @@
               Upstage Solar-Pro LLM 및 한국어 임베딩 모델 적용으로 한국어 특화
               RAG 파이프라인 구축
             </li>
+            <li>
+              <strong>LangSmith</strong>로 멀티 에이전트 실행 추적 · 디버깅 및
+              검색 품질 개선
+            </li>
             <li>FastAPI 기반 비동기 RESTful API 서버 개발</li>
           </ul>
           <div class="project-tech">
@@ -315,6 +316,7 @@
             <span>FastAPI</span>
             <span>LangGraph</span>
             <span>LangChain</span>
+            <span>LangSmith</span>
             <span>ChromaDB</span>
             <span>Upstage Solar-Pro LLM</span>
           </div>
