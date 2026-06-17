@@ -61,17 +61,15 @@
       <section class="cv-section cv-section-about">
         <h2>소개</h2>
         <p class="about-text">
-          특허 · 지식재산 공공 시스템과 커머스 벤치마킹 프로젝트에서 Java ·
-          Spring Boot 기반 백엔드를 구축해 왔습니다. 단순 기능 구현을 넘어 성능과
-          안정성 문제를 직접 정의하고 수치로 개선하는 데 강점이 있습니다. 좋아요
-          동시성(Lost Update)을 원자적 쿼리로 해결해 응답 속도를
-          <strong>46% 개선</strong>하고, 주문 조회 N+1을 배치 쿼리로 풀어
-          <strong>DB 접근을 84% 절감</strong>했으며, 결제 · 환불 트랜잭션 정합성과
-          webhook 검증 · URL 암호화 같은 보안까지 함께 고민해 왔습니다.<br />최근에는
-          NHN KCP 결제 라이프사이클과 Spring AOP 기반 로그 통합 · 감사 로깅 같은
-          횡단 관심사, LangGraph · ChromaDB RAG 파이프라인으로 영역을 확장하고
-          있으며, AI를 활용한 문서 · 테스트 자동화로 개발 워크플로우를 꾸준히
-          개선하고 있습니다.
+          특허 · 지식재산 공공 시스템과 커머스 벤치마킹 프로젝트에서 Java · Spring
+          Boot 백엔드를 구축해 온 개발자입니다. 단순 구현을 넘어 성능 · 안정성
+          문제를 수치로 개선하는 데 강점이 있어, 좋아요 동시성을 원자적 쿼리로
+          풀어 46% 개선하고, 주문 조회 N+1을 배치 쿼리로 풀어
+          DB 접근을 84% 절감했습니다. 결제 라이프사이클 · 보안 ·
+          AOP 로깅 같은 핵심 · 횡단 관심사부터 LangGraph · ChromaDB RAG까지 다루며,
+          AI를 설계 · 리뷰 파트너로 활용합니다. 제품의 여러 레이어를 직접 책임질
+          때 비로소 좋은 서비스가 만들어진다고 믿으며, 데이터 흐름부터 AI 연동까지
+          서비스 전체를 조망하는 개발자로 성장해 나가고자 합니다.
         </p>
       </section>
 
@@ -166,20 +164,6 @@
               N+1을 일괄 조회로 전환하고 ZIP 생성 OOM과 HTTP 타임아웃을 개선해 대량
               다운로드 안정성 확보
             </li>
-            <li>
-              심사 워크플로우 기능을 개발해 우수제품 ↔ 혁신시제품 서비스 전환, 재발행
-              신청(확인서 발급일 3년 이내 제한), 단계별 심사위원 변경, 담당자 배정 시
-              NHN Cloud 메일 · SMS 알림 발송 구현
-            </li>
-            <li class="parent-item">
-              RIPC 지역지식재산센터 — MyBatis · Eclipse · SVN 환경의 특허 ·
-              지식재산 행정 시스템 유지보수
-            </li>
-            <li>
-              <strong>Dooray–RIPC 계정 연동 시스템 구축</strong> — Dooray 측 담당
-              매니저와 직접 소통하며 Dooray와 RIPC 간 조직도 · 계정 동기화 연동을
-              설계 · 구현해 두 시스템 간 계정 정보의 정합성 확보
-            </li>
           </ul>
           <div class="project-tech">
             <span>Java 17</span>
@@ -208,8 +192,8 @@
               자동 추적 시스템 구현
             </li>
             <li>
-              <strong>역할 기반 접근 제어(RBAC)</strong> 시스템 설계 —
-              관리자 / 개발사 / 고객사 3단계 권한 분리
+              <strong>역할 기반 접근 제어(RBAC)</strong> 시스템을 설계해
+              관리자 / 개발사 / 고객사 3단계로 권한 분리
             </li>
             <li>
               <strong>Soft Delete 패턴</strong> 적용으로 데이터 복구 기능 구현
@@ -254,12 +238,11 @@
           <ul class="description">
             <li>
               카카오맵 API 기반 <strong>좌표 → 주소 자동 변환</strong> 및
-              <strong>Haversine 공식</strong> 기반 거리 계산·정렬 적용
+              <strong>Haversine 공식</strong> 기반 거리 계산 · 정렬 적용
             </li>
             <li>
-              리뷰 조회 <strong>N+1 문제 해결</strong> — 이미지·좋아요·사용자
-              정보로 인한 N+1을 Fetch Join으로 개선하여 1+N개 쿼리를
-              <strong>4개로 최적화</strong>
+              리뷰 조회 시 연관 데이터(이미지 · 좋아요 · 사용자)로 발생하던
+              <strong>N+1 쿼리를 Fetch Join으로 4개로 최적화</strong>
             </li>
             <li>
               Spring Security · OAuth2 · JWT 기반 인증/인가 및 AWS EC2 배포
@@ -292,9 +275,9 @@
               금융사기) 상담 챗봇 시스템 개발
             </li>
             <li>
-              <strong>LangGraph 기반 멀티 에이전트 워크플로우</strong> 설계 —
-              팩토리 패턴 + 훅 주입 아키텍처로 카테고리 확장성 확보 및 공통
-              워크플로우 재사용 구조 설계
+              팩토리 패턴 + 훅 주입 아키텍처로 카테고리 확장성과 공통 워크플로우
+              재사용 구조를 확보한 <strong>LangGraph 기반 멀티 에이전트
+              워크플로우</strong> 설계
             </li>
             <li>
               <strong>다단계 검색 전략</strong>(벡터 검색 → 필터 확장 → 쿼리
@@ -333,16 +316,16 @@
           <ul class="description">
             <li class="parent-item">
               무신사 쇼핑몰 서비스를 분석해 상품 · 주문 · 회원 · 브랜드 등 13개
-              도메인을 정규화 원칙으로 설계 — <strong>ERD 69개 테이블, 384개
+              도메인을 정규화 원칙으로 설계하고 <strong>ERD 69개 테이블 · 384개
               속성</strong> 및 외래키 관계 구성
             </li>
             <li>
-              <strong>좋아요 동시성 제어(Lost Update)</strong> — 원자적 UPDATE
-              쿼리로 데이터 정합성 100% 달성 및 응답 시간
+              <strong>좋아요 동시성(Lost Update)</strong>을 원자적 UPDATE 쿼리로
+              제어해 데이터 정합성 100% 달성 및 응답 시간
               <strong>46.4% 개선</strong>(2,610ms → 1,398ms)
             </li>
             <li>
-              <strong>N+1 문제 최적화</strong> — 배치 쿼리 적용으로 DB 접근
+              배치 쿼리 적용으로 <strong>N+1 문제를 최적화</strong>해 DB 접근
               <strong>84% 감소</strong>(32회 → 5회), 처리 시간
               <strong>39.3% 단축</strong>(122,861ms → 74,627ms)
             </li>
@@ -353,8 +336,8 @@
             </li>
             <li>
               상품 조회/검색 · 회원 관리 · 주문/결제 · 리뷰 등 핵심 RESTful API
-              <strong>30+개</strong> 구현 — 단순 CRUD는 JPA, 복잡한 조인 쿼리는
-              MyBatis로 분리하여 생산성과 성능 동시 확보
+              <strong>30+개</strong>를 구현하며, 단순 CRUD는 JPA, 복잡한 조인
+              쿼리는 MyBatis로 분리해 생산성과 성능 동시 확보
             </li>
           </ul>
           <div class="project-tech">
